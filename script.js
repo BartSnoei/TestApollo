@@ -124,19 +124,29 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       async function submitForm() {
-        const form = document.getElementById('myForm');
+        const form = document.getElementById("myForm");
         const formData = new FormData(form);
-
-        const response = await fetch('https://sheetdb.io/api/v1/9yr90p6u7aeqp', {
-            method: 'POST',
-            body: formData
-        });
-
-        if (response.ok) {
-            form.reset();
-            document.getElementById('successMessage').style.display = 'block';
-        } else {
-            alert('Error submitting the form. Please try again.');
+      
+        // Convert FormData to a JSON object
+        const formJSON = {};
+        for (const [key, value] of formData.entries()) {
+          formJSON[key] = value;
         }
-    }
+      
+        const response = await fetch("https://sheetdb.io/api/v1/9yr90p6u7aeqp", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ data: formJSON }),
+        });
+      
+        if (response.ok) {
+          form.reset();
+          document.getElementById("successMessage").style.display = "block";
+        } else {
+          alert("Error submitting the form. Please try again.");
+        }
+      }
+      
   
