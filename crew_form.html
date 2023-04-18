@@ -21,7 +21,7 @@
         >
         <input
           type="text"
-          name="data{surname}"
+          name="Surname"
           id="surname"
           placeholder="Surnames"
           required
@@ -31,7 +31,7 @@
         >
         <input
           type="text"
-          name="data{first_name}"
+          name="First_name"
           id="firstname"
           placeholder="First Names"
           required
@@ -39,7 +39,7 @@
         <label for="date_of_birth">Date of Birth: *</label>
         <input
           type="date"
-          name="data{date_of_birth}"
+          name="date_of_birth"
           id="date_of_birth"
           placeholder="Date of Birth"
           required
@@ -47,13 +47,13 @@
         <label for="place_of_birth">Place of Birth: *</label>
         <input
           type="text"
-          name="data{place_of_birth}"
+          name="place_of_birth"
           id="place_of_birth"
           placeholder="Place of Birth"
           required
         />
         <label for="Gender">Gender: *</label>
-        <select name="data{gender}" id="Gender" required>
+        <select name="gender" id="Gender" required>
           <option value="" disabled selected>
             --Please choose an option--
           </option>
@@ -62,7 +62,7 @@
         </select>
         <label for="nationality">Nationality: *</label>
         <select
-          name="data{nationality}"
+          name="nationality"
           id="Nationality"
           placeholder="Nationality"
           required
@@ -282,7 +282,7 @@
         <label for="passport_number">Passport Number: *</label>
         <input
           type="text"
-          name="data{passport_number}"
+          name="passport_number"
           id="passport_number"
           placeholder="Passport Number"
           required
@@ -290,7 +290,7 @@
         <label for="passport_validity">Passport Validity: *</label>
         <input
           type="date"
-          name="data{passport_expiry}"
+          name="passport_expiry"
           id="passport_validity"
           placeholder="Passport Expiry Date"
           required
@@ -299,7 +299,7 @@
           >Passport Issuing Country: *</label
         >
         <select
-          name="data{passport-country}"
+          name="passport-country"
           id="passport-issuing-country"
           required
         >
@@ -520,13 +520,13 @@
         >
         <input
           type="date"
-          name="data{medex_expiry_date}"
+          name="medex_expiry_date"
           id="medical_exam_expiry date"
           placeholder="Medical Exam Expiry Date"
           required
         />
         <label for="function_on_board">Function on board: *</label>
-        <select name="data{function}" id="function_on_board" required>
+        <select name="function" id="function_on_board" required>
           <option value="" disabled selected>
             --Please choose an option--
           </option>
@@ -557,13 +557,13 @@
         <label for="date of On-Signing">Date of On-Signing: *</label>
         <input
           type="date"
-          name="data{date_on_sign}"
+          name="date_on_sign"
           id="date_of_on-signing"
           placeholder="Date of on-signing"
           required
         />
         <label for="first time on APOLLO">First time on APOLLO: *</label>
-        <select name="data{first_time}" id="first time on APOLLO" required>
+        <select name="first_time" id="first time on APOLLO" required>
           <option value="" disabled selected>
             --Please choose an option--
           </option>
@@ -573,18 +573,18 @@
         <label for="prescribed_medicines"
           >Medical condition or prescribed medicines?: *</label
         >
-        <select name="data{medical_state}" id="prescribed_medicines" required>
+        <select name="medical_state_medicines" id="prescribed_medicines" required>
           <option value="" disabled selected>
             --Please choose an option--
           </option>
           <option value="yes">
-            Yes, <em>(Report to medical officer on board)</em>
+            Yes, <em>Report to medical officer on board</em>
           </option>
           <option value="no">No</option>
         </select>
 
         <label for="Company">Company <em>(Type of contract)</em>: * </label>
-        <select name="data{company_contract}" id="Company" required>
+        <select name="company_contract" id="Company" required>
           <option value="" disabled selected>
             --Please choose an option--
           </option>
@@ -609,28 +609,28 @@
         <br />
         <input
           type="text"
-          name="data{other_contract}"
+          name="other_contract"
           id="other contract"
           placeholder="Other contract"
         />
         <label for="Deme_Employee_Number">Deme Employee Number:</label>
         <input
           type="text"
-          name="data{employee_number}"
+          name="employee_number"
           id="Deme_Employee_Number"
           placeholder="Deme Employee Number"
         />
         <label for="phone number">Phone Number:</label>
         <input
           type="tel"
-          name="data{phone}"
+          name="phone"
           id="phone number"
           placeholder="Phone Number"
         />
         <label for="email">Email: *</label>
         <input
           type="email"
-          name="data{email}"
+          name="email"
           id="email"
           placeholder="Email"
           required
@@ -639,7 +639,7 @@
         <label for="next_of_kin_surname">Surname: *</label>
         <input
           type="text"
-          name="data{nok_surname}"
+          name="nok_surname"
           id="next_of_kin_surname"
           placeholder="Surname"
           required
@@ -647,7 +647,7 @@
         <label for="next_of_kin_name">First Name: *</label>
         <input
           type="text"
-          name="data{nok_firstname}"
+          name="nok_firstname"
           id="next_of_kin_firstname"
           placeholder="First Name"
           required
@@ -655,7 +655,7 @@
         <label for="next_of_kin_relation">Relation: *</label>
         <input
           type="text"
-          name="data{nok_relation}"
+          name="nok_relation"
           id="next_of_kin_relation"
           placeholder="Relation"
           required
@@ -663,7 +663,7 @@
         <label for="next next_of_kin_phone">Phone Number: *</label>
         <input
           type="tel"
-          name="data{nok_phone}"
+          name="nok_phone"
           id="next next_of_kin_phone"
           placeholder="Phone Number"
           required
@@ -696,7 +696,7 @@
         <input type="text" name="city" id="city" placeholder="City" />
 
         <label for="country">Country: *</label>
-<select name="data{nok_ountry}" id="Country" required>
+<select name="nok_country" id="Country" required>
     <option value="" disabled selected>
       --Please choose an option--
     </option>
@@ -917,7 +917,7 @@
           <input
             type="radio"
             id="yes"
-            name="data{lux_smb}"
+            name="lux_smb_yes"
             value="Yes"
             required
           />
@@ -925,7 +925,7 @@
           <input
             type="radio"
             id="no"
-            name="data{lux_smb}"
+            name="lux_smb_no"
             value="No"
             required
           />
@@ -934,7 +934,7 @@
         <br />
         <input
           type="date"
-          name="data{lux_smb_expiry}"
+          name="lux_smb_expiry"
           id="seamans_book_expiry"
           placeholder="Luxembourg Seamansbook Expiry"
         />
@@ -1444,8 +1444,8 @@
         <h4>
           Upon arrival at the vessel, please proceed to the bridge to receive your vessel induction and complete the necessary paperwork. The bridge team will also assign your cabin.
         </h4>
-        <input type="submit" value="submit" id="submit" class="button-link" style="height: auto" />
-        <br />
+        <input type="submit" value="submit" id="submit" class="button-link" style="height: auto"/>
+        <br/>
       </form>
       </div>
     <script src="script.js"></script>
